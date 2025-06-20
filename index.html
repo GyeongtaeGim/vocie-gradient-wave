@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Wave Visualizer</title>
+    <style>
+        body { 
+            margin: 0; 
+            overflow: hidden; 
+            display: flex; 
+            justify-content: center; 
+            min-height: 100vh;
+            align-items: center;             
+            flex-direction: column;
+        }
+        canvas { 
+            display: block; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        #startButton {
+            position: relative;
+            z-index: 1;
+            padding: 20px 40px;
+            font-size: 24px;
+            background: none;
+            border: 1px solid black;
+            color: black;
+            border-radius: 8px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+</head>
+<body>
+    <button id="startButton">Start wave animation </button> 
+    <script src="./main.js"></script>
+</body>
+</html>
