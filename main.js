@@ -2,6 +2,11 @@ const smoothingFactor = 1;
 const minFrequency = 20.0;
 const maxFrequency = 140.0;
 
+/**
+ * @description 3D Perlin noise 기능입니다.
+ * 이 GLSL 코드는 3D Perlin 노이즈를 생성하는 함수들을 포함하고 있습니다.
+ * Perlin 노이즈는 자연스러운 랜덤 패턴을 생성하는 데 사용되며, 주로 텍스처 생성, 지형 생성 등 다양한 그래픽스 분야에서 활용됩니다.
+ */
 const noiseGLSL = `
     vec4 permute(vec4 x){return mod(((x*34.0)+1.0)*x, 289.0);}
     vec4 taylorInvSqrt(vec4 r){return 1.79284291400159 - 0.85373472095314 * r;}
